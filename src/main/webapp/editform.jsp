@@ -20,7 +20,7 @@
     <form action="edit_ok.jsp" method="post" enctype="multipart/form-data">
         <table id="edit">
             <tr>
-                <td>User Id</td><td><input type="text" name="userid" ></td>
+                 <td>User Id</td><td><input type="text" name="userid" value></td>
             </tr>
             <tr>
                 <td>Name</td><td><input type="text" name="username" ></td>
@@ -32,7 +32,7 @@
                 <td>Email</td><td><input type="email" name="email" ></td>
             </tr>
             <tr>
-                <td>Detail</td><td><input cols="50" rows="5" name="detail" ></td>
+                <td>Detail</td><td><textarea cols="50" rows="5" name="detail" ></textarea></td>
             </tr>
         </table>
         <button type="button" onclick="history.back()">뒤로 보기</button>

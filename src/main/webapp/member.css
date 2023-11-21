@@ -1,0 +1,72 @@
+#list {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#list td, #list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align:center;
+}
+#list tr:nth-child(even){background-color: #f2f2f2;}
+#list tr:hover {background-color: #ddd;}
+#list th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #006bb3;
+    color: white;
+}
+
+#edit {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.td1 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #006bb3;
+    color: white;
+    border-color: white;
+}
+
+.td_input{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.btn_form_back {
+    float: left;
+    width: 200px;
+}
+
+.btn_form_do{
+    float: left;
+    width: 200px;
+    background-color: #006bb3;
+    border-color: #006bb3;
+}
+
+.btn_form_do:hover{
+    background-color: grey;
+    border-color: grey;
+}
+
+.btn_add{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    background-color: #006bb3;
+    border: none;
+    font-family: "paybooc-Light";
+    color: white;
+    border-radius: 15px;
+}
+
+.btn_add:hover{
+    background-color: grey;
+    border-color: grey;
+}

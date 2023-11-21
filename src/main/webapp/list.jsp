@@ -8,28 +8,8 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>free board</title>
-    <style>
-        #list {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        #list td, #list th {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align:center;
-        }
-        #list tr:nth-child(even){background-color: #f2f2f2;}
-        #list tr:hover {background-color: #ddd;}
-        #list th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: center;
-            background-color: #006bb3;
-            color: white;
-        }
-    </style>
+    <title>짱구 컴퍼니 </title>
+    <link rel="stylesheet" href="member.css">
     <script>
         function delete_ok(id){
             var a = confirm("정말로 삭제하겠습니까?");
@@ -50,9 +30,8 @@
         <th>ID</th>
         <th>Name</th>
         <th>Email</th>
-        <th>Blog URL</th>
-        <th>Photo</th>
         <th>Regdate</th>
+        <th>View</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
@@ -62,7 +41,6 @@
             <td>${u.getUserid()}</td>
             <td>${u.getUsername()}</td>
             <td>${u.getEmail()}</td>
-            <td>${u.getBlogurl()}</td>
             <td>${u.getRegdate()}</td>
             <td><a href="view.jsp?id=${u.getSid()}">View</a></td>
             <td><a href="editform.jsp?id=${u.getSid()}">Edit</a></td>
@@ -70,6 +48,7 @@
         </tr>
     </c:forEach>
 </table>
-<br/><a href="addform.jsp">Add New Post</a>
+<br/>
+<button class="btn_add" type="button" onclick="location.href='addform.jsp'">회원 추가</button>
 </body>
 </html>

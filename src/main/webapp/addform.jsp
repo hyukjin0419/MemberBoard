@@ -10,23 +10,23 @@
   <form action="add_ok.jsp" method="post" enctype="multipart/form-data">
     <table id="edit">
       <tr>
-        <td>User Id</td><td><input type="text" name="userid" ></td>
+        <td class="td1">User ID</td><td><input class="td_input" type="text" name="userid" ></td>
       </tr>
       <tr>
-        <td>Name</td><td><input type="text" name="username" ></td>
+        <td class="td1">Name</td><td><input class="td_input" type="text" name="username" ></td>
       </tr>
       <tr>
-        <td>Photo</td><td><input type="file" name="photo" ></td>
+        <td class="td1">Photo</td><td><input class="td_input" type="file" name="photo" ></td>
       </tr>
       <tr>
-        <td>Email</td><td><input type="email" name="email" ></td>
+        <td class="td1">Email</td><td><input class="td_input" type="email" name="email" ></td>
       </tr>
       <tr>
-        <td>Detail</td><td><input cols="50" rows="5" name="detail" ></td>
+        <td class="td1">Detail</td><td><textarea cols="33" rows="5" name="detail" ></textarea></td>
       </tr>
     </table>
-    <button type="button" onclick="location.href='list.jsp'">목록 보기</button>
-    <button type="submit">회원 추가</button>
+    <button class="btn_form_do" type="submit">회원 추가</button>
+    <button class="btn_form_back" type="button" onclick="location.href='list.jsp'">목록 보기</button>
   </form>
 </body>
 </html>
