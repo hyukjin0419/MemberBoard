@@ -18,7 +18,7 @@ public class MemberDAO {
     ResultSet rs = null;
 
     private final String M_INSERT = "insert into member (userid, password, username, email, photo, detail) values (?,sha1(?),?,?,?,?)";
-    private final String M_UPDATE = "update member set username=?, email=?, photo=?, detail=?";
+    private final String M_UPDATE = "update member set userid=?, username=?, email=?, photo=?, detail=?";
     private final String M_DELETE = "delete from member where sid=?";
     private final String M_GET = "select * from member  where sid=?";
     private final String M_LIST = "select * from member order by regdate desc";
@@ -42,7 +42,7 @@ public class MemberDAO {
         return result;
     }
 
-    public void deleteBoard(MemberVO data){
+    public void deleteMember(MemberVO data){
         System.out.println("===> JDBC로 insertDelete() 기능 처리");
         try {
             conn = JDBCUtil.getConnection();
@@ -53,16 +53,28 @@ public class MemberDAO {
             e.printStackTrace();
         }
     }
+    public void deleteMember(int data){
+        System.out.println("===> JDBC로 insertDelete() 기능 처리");
+        try {
+            conn = JDBCUtil.getConnection();
+            stmt = conn.prepareStatement(M_DELETE);
+            stmt.setInt(1, data);
+            stmt.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-    public int updateBoard(MemberVO data) {
+    public int updateMember(MemberVO data) {
         System.out.println("===> JDBC로 insertDelete() 기능 처리");
         try{
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(M_UPDATE);
-            stmt.setString(1, data.getUsername());
-            stmt.setString(2, data.getEmail());
-            stmt.setString(3, data.getPhoto());
-            stmt.setString(4, data.getDetail());
+            stmt.setString(1, data.getUserid());
+            stmt.setString(2, data.getUsername());
+            stmt.setString(3, data.getEmail());
+            stmt.setString(4, data.getPhoto());
+            stmt.setString(5, data.getDetail());
 
             System.out.println(data.getUsername() + "-" + data.getEmail() + "-" + data.getPhoto() + "-" + data.getDetail());
             stmt.executeUpdate();
@@ -99,7 +111,7 @@ public class MemberDAO {
         return one;
     }
 
-    public ArrayList<MemberVO> getList() {
+    public ArrayList<MemberVO> getMemberList() {
         ArrayList<MemberVO> list = null;
         conn = JDBCUtil.getConnection();
         try{
@@ -121,6 +133,24 @@ public class MemberDAO {
             e.printStackTrace();
         }
         return list;
+    }
+
+    public String getPhotoFilename(int sid) {
+        String filename = null;
+        try{
+            conn = JDBCUtil.getConnection();
+            stmt = conn.prepareStatement(M_GET);
+            stmt.setInt(1,sid);
+            rs = stmt.executeQuery();
+            if(rs.next()) {
+                filename = rs.getString("photo");
+            }
+            rs.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        System.out.println("===> JDBC로 getPhotoFilename() 기능 처리");
+        return filename;
     }
 }
 
