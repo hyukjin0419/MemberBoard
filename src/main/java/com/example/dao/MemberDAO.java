@@ -16,7 +16,7 @@ public class MemberDAO {
     PreparedStatement stmt = null;
     ResultSet rs = null;
 
-    private final String M_INSERT = "insert into member (userid, password, username, email, photo, detail) values (?,sha1(?),?,?,?,?)";
+    private final String M_INSERT = "insert into member (userid, username, email, photo, detail) values (?,sha1(?),?,?,?,?)";
     private final String M_UPDATE = "update member set userid=?, username=?, email=?, photo=?, detail=? where sid=?";
     private final String M_DELETE = "delete from member where sid=?";
     private final String M_GET = "select * from member  where sid=?";
@@ -29,7 +29,6 @@ public class MemberDAO {
         try{
             stmt = conn.prepareStatement(M_INSERT);
             stmt.setString(1, data.getUserid());
-            stmt.setString(2, data.getPassword());
             stmt.setString(3, data.getUsername());
             stmt.setString(4, data.getEmail());
             stmt.setString(5, data.getPhoto());
@@ -98,9 +97,7 @@ public class MemberDAO {
                 one.setSid(rs.getInt("sid"));
                 one.setUserid((rs.getString("userid")));
                 one.setUsername((rs.getString("username")));
-                one.setPassword((rs.getString("password")));
                 one.setEmail((rs.getString("email")));
-                one.setBlogurl((rs.getString("blogurl")));
                 one.setPhoto((rs.getString("photo")));
                 one.setDetail((rs.getString("detail")));
             }

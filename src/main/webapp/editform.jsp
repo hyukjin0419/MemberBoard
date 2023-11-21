@@ -55,7 +55,6 @@
                 class="form-control"
                 id="Photo"
                 name="photo"
-                value="${vo.getPhoto()}"
         />
         <!--<c:if test="${vo.getPhoto() ne ''}"><br /><img src="${pageContext.request.contextPath }/upload/${vo.getPhoto()}" class="photo"></c:if>-->
         <label for="Email" class="form-label">Email</label>
@@ -63,16 +62,14 @@
                 type="email"
                 class="form-control"
                 id="Email"
-                name="username"
+                name="email"
                 value="${vo.getEmail()}"
         />
         <label for="Detail" class="form-label">Detail</label>
         <textarea
                 class="form-control"
                 id="Detail"
-                name="detail"
-                value="${vo.getDetail()}">
-        </textarea>
+                name="detail">${vo.getDetail()}</textarea>
 
 
         <button class="btn btn-primary" type="submit">회원정보 수정</button>

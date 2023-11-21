@@ -9,14 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e43f082-7ff1-4aa1-967e-78e410d0ac70" name="Changes" comment="editform.jsp에서 submit실행시 전체 페이지가 수정되는 부분 MemberDAO에서 쿼리문 수정해소 fix">
+    <list default="true" id="9e43f082-7ff1-4aa1-967e-78e410d0ac70" name="Changes" comment="eidtform css 수정">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2/storage_v2/_src_/schema/p231_21900771.dv8TGQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2/storage_v2/_src_/schema/p231_21900771.dv8TGQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/member.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +191,7 @@
       <workItem from="1700532090713" duration="9111000" />
       <workItem from="1700549329078" duration="7558000" />
       <workItem from="1700569323612" duration="3338000" />
-      <workItem from="1700573911695" duration="4611000" />
+      <workItem from="1700573911695" duration="5279000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the Project &amp; Reform it">
       <option name="closed" value="true" />
@@ -242,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700561315518</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="eidtform css 수정">
+      <option name="closed" value="true" />
+      <created>1700578813055</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700578813055</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,6 +273,7 @@
     <MESSAGE value="Change Borad to 회원관리 Board" />
     <MESSAGE value="Add member.css&#10;Debugged all pages&#10;Next step: fix editform to display previous values" />
     <MESSAGE value="editform.jsp에서 submit실행시 전체 페이지가 수정되는 부분 MemberDAO에서 쿼리문 수정해소 fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="editform.jsp에서 submit실행시 전체 페이지가 수정되는 부분 MemberDAO에서 쿼리문 수정해소 fix" />
+    <MESSAGE value="eidtform css 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="eidtform css 수정" />
   </component>
 </project>
