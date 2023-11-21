@@ -10,7 +10,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class MemberDAO {
 
     Connection conn = null;
@@ -18,7 +17,7 @@ public class MemberDAO {
     ResultSet rs = null;
 
     private final String M_INSERT = "insert into member (userid, password, username, email, photo, detail) values (?,sha1(?),?,?,?,?)";
-    private final String M_UPDATE = "update member set userid=?, username=?, email=?, photo=?, detail=?";
+    private final String M_UPDATE = "update member set userid=?, username=?, email=?, photo=?, detail=? where sid=?";
     private final String M_DELETE = "delete from member where sid=?";
     private final String M_GET = "select * from member  where sid=?";
     private final String M_LIST = "select * from member order by regdate desc";
@@ -43,7 +42,7 @@ public class MemberDAO {
     }
 
     public void deleteMember(MemberVO data){
-        System.out.println("===> JDBC로 insertDelete() 기능 처리");
+        System.out.println("===> JDBC로 deleteMember() 기능 처리");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(M_DELETE);
@@ -54,7 +53,7 @@ public class MemberDAO {
         }
     }
     public void deleteMember(int data){
-        System.out.println("===> JDBC로 insertDelete() 기능 처리");
+        System.out.println("===> JDBC로 deleteMember() 기능 처리");
         try {
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(M_DELETE);
@@ -66,7 +65,7 @@ public class MemberDAO {
     }
 
     public int updateMember(MemberVO data) {
-        System.out.println("===> JDBC로 insertDelete() 기능 처리");
+        System.out.println("===> JDBC로 updateMember() 기능 처리");
         try{
             conn = JDBCUtil.getConnection();
             stmt = conn.prepareStatement(M_UPDATE);
@@ -75,8 +74,9 @@ public class MemberDAO {
             stmt.setString(3, data.getEmail());
             stmt.setString(4, data.getPhoto());
             stmt.setString(5, data.getDetail());
+            stmt.setInt(6, data.getSid());
 
-            System.out.println(data.getUsername() + "-" + data.getEmail() + "-" + data.getPhoto() + "-" + data.getDetail());
+            System.out.println(data.getUsername() + "-" + data.getEmail() + "-" + data.getPhoto() + "-" + data.getDetail() + "-" + data.getSid());
             stmt.executeUpdate();
             return 1;
 

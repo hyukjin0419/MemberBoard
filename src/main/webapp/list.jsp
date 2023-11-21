@@ -18,6 +18,7 @@
     </script>
 </head>
 <body>
+
 <h1>회원목록</h1>
 <%
     MemberDAO boardDAO = new MemberDAO();
