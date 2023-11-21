@@ -9,29 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e43f082-7ff1-4aa1-967e-78e410d0ac70" name="Changes" comment="Create MemberDAO.java &amp; MemberVO.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/common/FileUpload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_editform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/addform.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/delete_ok.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2/storage_v2/_src_/schema/p231_21900771.dv8TGQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f57daf7-6c8e-49d0-83b0-99a621cf37d2/storage_v2/_src_/schema/p231_21900771.dv8TGQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_addposton.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/addpostform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_addpostform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/deletepost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_deletepost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_editpost.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_posts.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="9e43f082-7ff1-4aa1-967e-78e410d0ac70" name="Changes" comment="Change Borad to 회원관리 Board" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +180,7 @@
       <workItem from="1700531145115" duration="48000" />
       <workItem from="1700532074677" duration="7000" />
       <workItem from="1700532090713" duration="9111000" />
-      <workItem from="1700549329078" duration="1586000" />
+      <workItem from="1700549329078" duration="2082000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the Project &amp; Reform it">
       <option name="closed" value="true" />
@@ -228,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700533927248</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Change Borad to 회원관리 Board">
+      <option name="closed" value="true" />
+      <created>1700550951901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700550951901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +224,7 @@
     <MESSAGE value="Debugging" />
     <MESSAGE value="Creat the Project &amp; Reform it" />
     <MESSAGE value="Create MemberDAO.java &amp; MemberVO.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create MemberDAO.java &amp; MemberVO.java" />
+    <MESSAGE value="Change Borad to 회원관리 Board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change Borad to 회원관리 Board" />
   </component>
 </project>
