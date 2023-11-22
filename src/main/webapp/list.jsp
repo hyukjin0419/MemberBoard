@@ -9,17 +9,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>짱구 컴퍼니 </title>
-    <link rel="stylesheet" href="member.css">
     <script>
         function delete_ok(id){
             var a = confirm("정말로 삭제하겠습니까?");
             if(a) location.href='delete_ok.jsp?id=' + id;
         }
     </script>
+    <link rel="stylesheet" href="member.css?after">
 </head>
 <body>
 
-<h1>회원목록</h1>
+<h1>짱구 컴퍼니 회원목록</h1>
 <%
     MemberDAO boardDAO = new MemberDAO();
     List<MemberVO> list = boardDAO.getMemberList();
