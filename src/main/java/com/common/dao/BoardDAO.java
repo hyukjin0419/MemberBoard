@@ -1,7 +1,7 @@
-package com.example.dao;
+package com.common.dao;
 
-import com.example.bean.BoardVO;
-import com.example.util.JDBCUtil;
+import com.common.bean.BoardVO;
+import com.common.util.JDBCUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

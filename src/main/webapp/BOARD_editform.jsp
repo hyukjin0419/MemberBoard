@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@page import="com.example.dao.BoardDAO, com.example.bean.BoardVO"%>
+ <%@page import="com.common.dao.BoardDAO, com.common.bean.BoardVO"%>
 <!DOCTYPE html>
 <html>
 <head>

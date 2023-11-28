@@ -9,11 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e43f082-7ff1-4aa1-967e-78e410d0ac70" name="Changes" comment="fix eidtform error">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="9e43f082-7ff1-4aa1-967e-78e410d0ac70" name="Changes" comment="upgrade css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bean/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/bean/BoardVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bean/MemberVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/bean/MemberVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/boardjspproject/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/boardjspproject/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/common/FileUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/common/FileUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/BoardDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/BoardDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/dao/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/dao/MemberDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/JDBCUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/common/util/JDBCUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/BOARD_addposton.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_addposton.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/BOARD_deletepost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_deletepost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/BOARD_editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_editform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/BOARD_editpost.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_editpost.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/BOARD_posts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/BOARD_posts.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add_ok.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/delete_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/delete_ok.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit_ok.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/editform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/member.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/member.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +70,6 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/hyukjinchoi/Desktop/실전 프로젝트 1/실습/BoardJSPProject/src/main/webapp&quot;,
@@ -194,7 +207,8 @@
       <workItem from="1700549329078" duration="7558000" />
       <workItem from="1700569323612" duration="3338000" />
       <workItem from="1700573911695" duration="5996000" />
-      <workItem from="1700619659762" duration="1879000" />
+      <workItem from="1700619659762" duration="1924000" />
+      <workItem from="1700621903293" duration="3557000" />
     </task>
     <task id="LOCAL-00001" summary="Creat the Project &amp; Reform it">
       <option name="closed" value="true" />
@@ -260,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700579325894</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="upgrade css">
+      <option name="closed" value="true" />
+      <created>1700621574648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700621574648</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +308,7 @@
     <MESSAGE value="editform.jsp에서 submit실행시 전체 페이지가 수정되는 부분 MemberDAO에서 쿼리문 수정해소 fix" />
     <MESSAGE value="eidtform css 수정" />
     <MESSAGE value="fix eidtform error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix eidtform error" />
+    <MESSAGE value="upgrade css" />
+    <option name="LAST_COMMIT_MESSAGE" value="upgrade css" />
   </component>
 </project>

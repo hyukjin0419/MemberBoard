@@ -1,14 +1,13 @@
-package com.example.dao;
+package com.common.dao;
 
-import com.example.bean.MemberVO;
-import com.example.util.JDBCUtil;
+import com.common.bean.MemberVO;
+import com.common.util.JDBCUtil;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class MemberDAO {
 
@@ -16,7 +15,7 @@ public class MemberDAO {
     PreparedStatement stmt = null;
     ResultSet rs = null;
 
-    private final String M_INSERT = "insert into member (userid, username, email, photo, detail) values (?,sha1(?),?,?,?,?)";
+    private final String M_INSERT = "insert into member (userid, username, photo, email, detail) values (?,?,?,?,?)";
     private final String M_UPDATE = "update member set userid=?, username=?, email=?, photo=?, detail=? where sid=?";
     private final String M_DELETE = "delete from member where sid=?";
     private final String M_GET = "select * from member  where sid=?";
@@ -29,10 +28,10 @@ public class MemberDAO {
         try{
             stmt = conn.prepareStatement(M_INSERT);
             stmt.setString(1, data.getUserid());
-            stmt.setString(3, data.getUsername());
+            stmt.setString(2, data.getUsername());
+            stmt.setString(3, data.getPhoto());
             stmt.setString(4, data.getEmail());
-            stmt.setString(5, data.getPhoto());
-            stmt.setString(6, data.getDetail());
+            stmt.setString(5, data.getDetail());
             result = stmt.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();

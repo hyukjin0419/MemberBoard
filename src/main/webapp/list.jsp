@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
-<%@page import="com.example.dao.MemberDAO, com.example.bean.MemberVO,java.util.*"%>
+<%@page import="com.common.dao.MemberDAO, com.common.bean.MemberVO,java.util.*"%>
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 

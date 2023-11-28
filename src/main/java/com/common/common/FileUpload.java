@@ -1,6 +1,6 @@
-package com.example.common;
-import com.example.bean.MemberVO;
-import com.example.dao.MemberDAO;
+package com.common.common;
+import com.common.bean.MemberVO;
+import com.common.dao.MemberDAO;
 import com.oreilly.servlet.MultipartRequest;
 import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
 
